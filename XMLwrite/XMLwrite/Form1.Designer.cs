@@ -76,7 +76,7 @@
             this.writeStart.Name = "writeStart";
             this.writeStart.Size = new System.Drawing.Size(75, 23);
             this.writeStart.TabIndex = 4;
-            this.writeStart.Text = "Write";
+            this.writeStart.Text = "Read";
             this.writeStart.UseVisualStyleBackColor = true;
             this.writeStart.Click += new System.EventHandler(this.writeStart_Click);
             // 

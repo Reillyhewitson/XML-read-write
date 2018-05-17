@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using System.Xml;
 using System.Xml.Linq;
 
+
 namespace XMLwrite
 {
     public partial class Form1 : Form
@@ -39,13 +40,14 @@ namespace XMLwrite
 
         private void writeStart_Click(object sender, EventArgs e)
         {
+            string title = inputTitle.Text;
             string text;
             using (var streamReader = new StreamReader(directory, Encoding.UTF8))
             {
                 text = streamReader.ReadToEnd();
             }
-            XElement root = XElement.Parse(text);
-            Console.WriteLine(root.ToString());
+            InputBody.Text = text;
+
             
         }
     }
